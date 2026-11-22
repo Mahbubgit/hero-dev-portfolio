@@ -1,10 +1,17 @@
 *{
     margin: 0;
     padding: 0;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
 }
 
 /* shared style */
+
+.container{
+    width: 71%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
 .font-open-sans {
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
@@ -28,9 +35,11 @@
     font-weight: bold;
     color: white;
     cursor: pointer;
+    margin-right: 30px;
 }
 
 .text-center{
+    margin-top: 50px;
     text-align: center;
 }
 .section-heading{
@@ -51,11 +60,14 @@
     margin-bottom: 30px;
     line-height: 30px;
     color: #757575;
+    text-align: justify;
 }
 
 .cv-gap{
     margin-left: 10px;
 }
+
+
 /* main style */
 header{
     background: url("../images/developer.png"), url("../images/header_bg.png"), #FFF8F3;
@@ -66,10 +78,6 @@ header{
 }
 
 nav{
-    width: 71%;
-    max-width: 1140px;
-    /* border: 2px solid red; */
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -109,7 +117,7 @@ nav .menu a{
 }
 
 #banner .banner-content h1{
-    font-size: 85px;
+    font-size: 45px;
     font-weight: 700;
     color: #181818;
     margin-bottom: 20px;
@@ -134,10 +142,6 @@ nav .menu a{
 }
 
 #about .about-container{
-    width: 71%;
-    max-width: 1140px;
-    margin: 0 auto;
-
     text-align: center;
     background-color: #FFF8F3;
     padding: 131px 156px;
@@ -159,23 +163,19 @@ nav .menu a{
     color: #474747;
 }
 
-
-#skills .skills-container{
-   width: 71%;
-   max-width: 1140px;
-   margin: 0 auto;
-}
-
 #skills .skills-container .skill-box{
     display: flex;
     gap: 24px;
+    flex-wrap: wrap;
+    
 }
 
 .skill-box .skill-card{
+    margin: 0 auto;
     padding: 30px;
-    /* border: 2px solid gray; */
-    max-width: 267px;
+    max-width: 350px;
     box-shadow: 0 6px 50px 0 #00000028;
+    text-align: justify;
 }
 
 .skill-card img{
@@ -197,11 +197,10 @@ nav .menu a{
 }
 
 #resume .resume-container{
-   width: 71%;
-   max-width: 1140px;
-   margin: 113px auto 0;
+   margin-top: 113px;
    display: flex;
    gap: 24px;
+  
 }
 .resume-container hr{
     margin: 30px 0;
@@ -238,18 +237,15 @@ nav .menu a{
 }
 
 footer{
-    width: 1600px;
     margin-top: 130px;
     background-color: #FFF8F3;
-    padding: 130px;
+    padding: 130px 0;
 }
 
 footer .footer-container{
-    width: 71%;
-    max-width: 1140px;
-    margin: 0 auto;
     display: flex;
     gap: 116px;
+    justify-content: space-between;
 }
 
 .footer-container h2{
